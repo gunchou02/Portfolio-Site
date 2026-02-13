@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="クラウドインフラ＆フロントエンドエンジニアのポートフォリオ。AWS、Azure、Terraform、Reactを活用したフルサイクル開発。"
+    />
+    <meta name="author" content="Park Jeongbin" />
+    <meta
+      property="og:title"
+      content="Park Jeongbin | Cloud & Frontend Engineer"
+    />
+    <meta
+      property="og:description"
+      content="インフラからフロントエンドまで。信頼性とユーザー体験を両立させるエンジニア。"
+    />
+    <meta property="og:image" content="https://example.com/og-image.jpg" />
+    <!-- 後で実際の画像URLに置き換え -->
+    <title>PARK JEONGBIN | Cloud & Frontend Engineer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ロード画面 -->
+    <div id="loader">
+      <div class="loader-content">
+        <div class="loader-logo">PARK.JEONGBIN</div>
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+        <div class="loading-text">
+          Loading... <span id="progress-text">0%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="background-gradient"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav aria-label="Primary Navigation">
+      <div class="logo">PARK.JEONGBIN.</div>
+      <ul class="nav-links">
+        <li><a href="#about">私について</a></li>
+        <li><a href="#skills">スキル</a></li>
+        <li><a href="#projects">プロジェクト</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="hero">
+        <div class="glass-panel hero-box">
+          <div class="badge">Cloud Infrastructure & Frontend Engineer</div>
+          <h1 class="hero-title">Cloud &<br />Frontend</h1>
+          <p class="hero-desc">
+            <strong>「インフラから、体験まで」</strong><br />
+            堅牢なクラウド環境の構築と、直感的なUI開発をワンストップで。<br />
+            開発から運用まで、サービスの全工程を支えるエンジニアを目指しています。
+          </p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num">Dev & Ops</span>
+              <span class="stat-label">開発と運用</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">IaC</span>
+              <span class="stat-label">インフラコード化</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">CI/CD</span>
+              <span class="stat-label">デプロイ自動化</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="glass-panel about-panel">
+            <div class="about-text">
+              <h2>私について</h2>
+              <p>
+                HAL東京
+                WEB学科在学中。Web開発のバックグラウンドを持ち、<strong>クラウドエンジニア</strong>を目指しています。<br />
+                兵役の時１年半間戦車砲手としての経験で培った<strong>「徹底した確認プロセス」</strong>と<strong>「チームワーク」</strong>を、インフラ構築・運用の現場で活かします。
+              </p>
+              <p>
+                単なるサーバー構築にとどまらず、<strong>TerraformによるIaC</strong>や<strong
+                  >GitHub Actionsを用いたCI/CD</strong
+                >の構築を得意としています。<br />
+                また、<strong>HTML, CSS, JavaScript</strong
+                >などのフロントエンド技術も習得しており、構築したインフラ上で動作するアプリケーションまで一貫して開発・最適化できることが強みです。
+              </p>
+            </div>
+            <div class="glass-panel profile-card">
+              <div class="profile-placeholder">
+                <i class="fa-solid fa-user-astronaut"></i>
+              </div>
+              <div class="profile-info">
+                <h3>PARK JEONGBIN</h3>
+                <p>埼玉県在住</p>
+                <div class="status-indicator">
+                  <span class="dot"></span> 採用募集中
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <h2 class="section-title">スキルセット</h2>
+          <div class="skills-grid">
+            <div class="glass-panel skill-card">
+              <div class="card-header">
+                <i class="fa-brands fa-aws"></i>
+                <h3>Cloud Infrastructure</h3>
+              </div>
+              <ul class="tech-list">
+                <li><strong>AWS Core:</strong> EC2, S3, IAM</li>
+                <li>
+                  <strong>Serverless:</strong> Lambda, API Gateway, DynamoDB
+                </li>
+                <li><strong>Azure:</strong> Virtual Machines, App Service</li>
+              </ul>
+              <div class="tech-tag-container">
+                <span class="tech-tag">高可用性設計</span>
+                <span class="tech-tag">セキュリティグループ</span>
+              </div>
+            </div>
+            <div class="glass-panel skill-card">
+              <div class="card-header">
+                <i class="fa-solid fa-code-branch"></i>
+                <h3>DevOps & Automation</h3>
+              </div>
+              <ul class="tech-list">
+                <li><strong>IaC:</strong> Terraform (State管理, Module設計)</li>
+                <li><strong>Container:</strong> Docker, Docker Compose</li>
+                <li><strong>CI/CD:</strong> GitHub Actions (自動デプロイ)</li>
+                <li><strong>Version Control:</strong> Git, GitHub Flow</li>
+              </ul>
+              <div class="tech-tag-container">
+                <span class="tech-tag">運用自動化</span>
+                <span class="tech-tag">パイプライン</span>
+              </div>
+            </div>
+            <div class="glass-panel skill-card">
+              <div class="card-header">
+                <i class="fa-solid fa-terminal"></i>
+                <h3>Tools</h3>
+              </div>
+              <ul class="tech-list">
+                <li>
+                  <strong>Terminal:</strong> CLI Basic Operation (コマンド操作)
+                </li>
+                <li><strong>OS:</strong> MacOS, Windows</li>
+              </ul>
+              <div class="tech-tag-container">
+                <span class="tech-tag">基本操作</span>
+              </div>
+            </div>
+            <div class="glass-panel skill-card">
+              <div class="card-header">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Frontend & Backend</h3>
+              </div>
+              <ul class="tech-list">
+                <li>
+                  <strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+)
+                </li>
+                <li><strong>Backend:</strong> PHP (Basic)</li>
+                <li><strong>Design:</strong> レスポンシブWeb, UI/UX理解</li>
+              </ul>
+              <div class="tech-tag-container">
+                <span class="tech-tag">フルスタック視点</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h2 class="section-title">主要プロジェクト</h2>
+          <div class="projects-wrapper">
+            <div class="glass-panel project-card">
+              <div class="p-header">SERVERLESS APPLICATION</div>
+              <h3>お天気メシ - グルメ予報</h3>
+              <p>
+                <strong>概要:</strong>
+                気象データと現在地に基づき、状況に最適なグルメをAIが提案するフルサーバーレスWebアプリ。
+              </p>
+              <br />
+              <p>
+                <strong>技術:</strong> バックエンドにAWS
+                Lambda(Python)とDynamoDBを採用し、3種の外部API(気象・グルメ・地図)を統合して動的レコメンドを実装
+              </p>
+              <br />
+              <div class="p-stack">
+                <span>AWS Lambda</span><span>Python</span><span>API統合</span>
+              </div>
+              <a
+                href="https://otenki-meshi-jeongbin-2026.s3.ap-northeast-1.amazonaws.com/index.html"
+                class="glow-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                サイトを見る <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="glass-panel project-card">
+              <div class="p-header">SERVERLESS APPLICATION</div>
+              <h3>お天気メシ - グルメ予報</h3>
+              <p>
+                <strong>概要:</strong>
+                気象データと現在地に基づき、状況に最適なグルメをAIが提案するフルサーバーレスWebアプリ。
+              </p>
+              <br />
+              <p>
+                <strong>技術:</strong> バックエンドにAWS
+                Lambda(Python)とDynamoDBを採用し、3種の外部API(気象・グルメ・地図)を統合して動的レコメンドを実装
+              </p>
+              <br />
+              <div class="p-stack">
+                <span>AWS Lambda</span><span>Python</span><span>API統合</span>
+              </div>
+              <a
+                href="https://otenki-meshi-jeongbin-2026.s3.ap-northeast-1.amazonaws.com/index.html"
+                class="glow-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                サイトを見る <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="glass-panel contact-box">
+            <h2>お問い合わせ</h2>
+            <br />
+            <br />
+            <form id="contact-form">
+              <div class="form-grid">
+                <input type="text" name="name" placeholder="お名前" required />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="メールアドレス"
+                  required
+                />
+              </div>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="お問い合わせ内容..."
+                required
+              ></textarea>
+              <button type="submit" class="glow-btn full-width">
+                送信する
+              </button>
+              <div
+                id="form-status"
+                style="margin-top: 20px; font-weight: bold"
+              ></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> PARK JEONGBIN. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/gunchou02"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
